@@ -1,0 +1,21 @@
+<lift:surround with="default" at="content">
+  <h2>Welcome to your project!</h2>
+    <p>
+        <lift:helloWorld.howdy>
+        <span>Welcome to app at <b:time/></span>
+      </lift:helloWorld.howdy>
+    </p>
+    <p>
+         <lift:makeLinks>
+             <ul>
+                 <li><a href="page/1">This link</a> goes to valid /page/1 (valid).</li>
+                 <li><a href="page">This link</a> goes to /page (not valid)</li>
+                 <li><a href="pageview/1">This link</a> goes to /pageview/1 (valid)</li>
+                 <li><a id="md1" onclick="#">This link</a> opens a  modal Dialog to /page ( works, but not valid )</li>
+                 <li><a id="md2" onclick="#">This link</a> opens a  modal Dialog to /page/1 ( does not work )</li>
+                 <li><a id="md3" onclick="#">This link</a> opens a  modal Dialog to /pageview/1 ( works )</li>
+             </ul>
+         </lift:makeLinks>
+    </p>
+
+</lift:surround>
